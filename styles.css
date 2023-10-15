@@ -1,0 +1,71 @@
+:root {
+  --cor-primaria: #EE82EE;
+  --cor-secundaria: #D8BFD8;
+  --cor-neutral: black;
+  --spacing-sm: 8px;
+  --spacing-md: 10px;
+  --spacing-lg: 14px;
+}
+
+body {
+  background-color: var(--cor-neutral);
+  color: var(--cor-secundaria);
+  margin: var(--spacing-md) var(--spacing-sm);
+}
+
+h1 {
+  color: var(--cor-primaria);
+  padding-top: var(--spacing-lg);
+}
+
+form {
+  border: 2px solid var(--cor-secundaria);
+  padding: var(--spacing-lg);
+  border-radius: 10px;
+}
+
+fieldset {
+  border: 2px solid var(--cor-secundaria);
+  border-radius: 10px;
+  margin-bottom: var(--spacing-lg);
+  padding: var(--spacing-md);
+}
+
+legend {
+  color: var(--cor-primaria);
+  font-weight: bold;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-top: var(--spacing-md);
+}
+
+input, select {
+  width: 99%;
+  padding: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+  border: 1px solid var(--cor-secundaria);
+  border-radius: 5px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: var(--spacing-lg);
+}
+
+button {
+  font-weight: bold;
+  color: black;
+  padding: var(--spacing-md) var(--spacing-lg);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+}

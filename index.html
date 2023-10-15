@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Formulário de Agendamento</title>
+</head>
+<body>
+    <h1>Formulário de Agendamento</h1>
+    <form id="appointment-form">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome*:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="idade">Idade (maior de 18 anos)*:</label>
+            <input type="number" id="idade" name="idade" min="19" required>
+
+            <label for="telefone">Telefone*:</label>
+            <input type="tel" id="telefone" name="telefone" pattern="[0-9]{2}-[9]{1}[0-9]{3}-[0-9]{4}" placeholder="11-9999-9999" required>
+
+            <label for="genero">Gênero:</label>
+            <select id="genero" name="genero">
+                <option value="Masculino">Masculino</option>
+                <option value="Feminino">Feminino</option>
+            </select>
+
+            <label for="data-nascimento">Data de Nascimento*:</label>
+            <input type="date" id="data-nascimento" name="data-nascimento" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Horário de Atendimento</legend>
+            <label for="horario-atendimento">Horário de Atendimento*:</label>
+            <input type="time" id="horario-atendimento" name="horario-atendimento" min="07:00" max="17:00" required>
+        </fieldset>
+
+        <fieldset>
+            <legend>Hobbies</legend>
+            <label for="hobbies">Selecione pelo menos 7 hobbies:</label>
+            <select id="hobbies" name="hobbies" multiple>
+                <option value="Esportes">Esportes</option>
+                <option value="Leitura">Leitura</option>
+                <option value="Cinema">Cinema</option>
+                <option value="Viagens">Viagens</option>
+                <option value="Cozinhar">Cozinhar</option>
+                <option value="Música">Música</option>
+                <option value="Arte">Arte</option>
+                <option value="Dança">Dança</option>
+                <option value="Outros">Outros</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Cor Preferida</legend>
+            <label for="cor-preferida">Selecione uma cor preferida:</label>
+            <select id="cor-preferida" name="cor-preferida">
+                <option value="Vermelho">Vermelho</option>
+                <option value="Azul">Azul</option>
+                <option value="Verde">Verde</option>
+                <option value="Amarelo">Amarelo</option>
+                <option value="Roxo">Roxo</option>
+                <option value="Laranja">Laranja</option>
+                <option value="Rosa">Rosa</option>
+            </select>
+        </fieldset>
+
+        <div class="buttons">
+          <button style="background-color: red;" type="reset">Limpar</button>
+          
+          <button style="background-color: greenyellow;" type="submit">Enviar</button>
+        </div>
+    </form>
+</body>
+</html>
